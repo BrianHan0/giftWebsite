@@ -4,6 +4,8 @@ import EmojiRain from "../ui/EmojiRain";
 import Modal from "../ui/Modal";
 import LoveLetter from "../ui/LoveLetter";
 import PhotoSlideshow from "../ui/PhotoSlideshow";
+import { asset } from "../lib/asset";
+
 import {
   DatesSlideshow,
   ShowsSlideshow,
@@ -30,7 +32,7 @@ export default function HomeScreen() {
     <div className="relative min-h-screen w-full overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url(/images/snoopy-background.jpg)" }}
+        style={{ backgroundImage: `url(${asset("images/snoopy-background.jpg")})` }}
       />
       <div className="absolute inset-0 bg-black/10" />
       <Snowfall count={50} />

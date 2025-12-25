@@ -1,14 +1,15 @@
 import { useMemo, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { asset } from "../lib/asset";
 
 export default function PhotoSlideshow() {
   const photos = useMemo(
     () => [
-      { src: "/images/camera/1.JPG", desc: "I like this picture cause its us on my BIG day!" },
-      { src: "/images/camera/2.jpg", desc: "We look goofy ahhhhh" },
-      { src: "/images/camera/3.JPG", desc: "We look made cute together!" },
-      { src: "/images/camera/4.JPG", desc: "Mad sophisticated " },
-      { src: "/images/camera/5.JPG", desc: "I know I'm not in this. You just look hot" },
+      { src: asset("/images/camera/1.JPG"), desc: "I like this picture cause its us on my BIG day!" },
+      { src: asset("/images/camera/2.jpg"), desc: "We look goofy ahhhhh" },
+      { src: asset("/images/camera/3.JPG"), desc: "We look made cute together!" },
+      { src: asset("/images/camera/4.JPG"), desc: "Mad sophisticated " },
+      { src: asset("/images/camera/5.JPG"), desc: "I know I'm not in this. You just look hot" },
     ],
     []
   );

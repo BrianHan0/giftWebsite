@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Heart } from "lucide-react";
+import { asset } from "../lib/asset";
 
 const PASSCODE = "0904";
 
@@ -60,7 +61,7 @@ export default function LockScreen({ onUnlock }: { onUnlock: () => void }) {
       <video
         ref={videoRef}
         className="absolute inset-0 h-full w-full object-cover"
-        src="/video/background.mp4"
+        src={asset("video/background.mp4")}
         autoPlay
         muted
         playsInline
