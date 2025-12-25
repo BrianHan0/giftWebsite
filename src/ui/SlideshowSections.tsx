@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { asset } from "../lib/asset";
+
 
 type Slide = { src: string; title: string; desc: string; meta?: string };
 
@@ -63,11 +65,11 @@ export function ShowsSlideshow() {
     <Slideshow
       header="Favorites shows/movies we've watched!"
       slides={[
-        { src: "/images/shows/1.jpg", title: "Friends!", desc: "I love watching friends with you!" },
-        { src: "/images/shows/2.jpg", title: "Love Island", desc: "Stupid ahhhhh show." },
-        { src: "/images/shows/3.avif", title: "Captain America and the winter soldier", desc: "Good movie ig." },
-        { src: "/images/shows/5.jpg", title: "Culinary class wars", desc: "Goated ahhh show." },
-        { src: "/images/shows/4.jpg", title: "Gossip Girl", desc: "Classic." },
+        { src: asset("/images/shows/1.jpg"), title: "Friends!", desc: "I love watching friends with you!" },
+        { src: asset("/images/shows/2.jpg"), title: "Love Island", desc: "Stupid ahhhhh show." },
+        { src: asset("/images/shows/3.avif"), title: "Captain America and the winter soldier", desc: "Good movie ig." },
+        { src: asset("/images/shows/5.jpg"), title: "Culinary class wars", desc: "Goated ahhh show." },
+        { src: asset("/images/shows/4.jpg"), title: "Gossip Girl", desc: "Classic." },
       ]}
     />
   );
@@ -78,11 +80,11 @@ export function RestaurantsSlideshow() {
     <Slideshow
       header="Favorite restaurants we've been to!"
       slides={[
-        { src: "/images/restaurants/1.avif", title: "Thirteen waaaaater ", desc: "Starting off strong. So freaking yummy!" },
-        { src: "/images/restaurants/2.png", title: "Limits", desc: "What a classic." },
-        { src: "/images/restaurants/3.jpg", title: "DAILO", desc: "I NEED DA LEAF NOW." },
-        { src: "/images/restaurants/4.jpeg", title: "Shake Shack", desc: "Just another classic." },
-        { src: "/images/restaurants/5.webp", title: "Midami Sushi", desc: "HALL OF FAME." },
+        { src: asset("/images/restaurants/1.avif"), title: "Thirteen waaaaater ", desc: "Starting off strong. So freaking yummy!" },
+        { src: asset("/images/restaurants/2.png"), title: "Limits", desc: "What a classic." },
+        { src: asset("/images/restaurants/3.jpg"), title: "DAILO", desc: "I NEED DA LEAF NOW." },
+        { src: asset("/images/restaurants/4.jpeg"), title: "Shake Shack", desc: "Just another classic." },
+        { src: asset("/images/restaurants/5.webp"), title: "Midami Sushi", desc: "HALL OF FAME." },
       ]}
     />
   );
@@ -93,11 +95,11 @@ export function FuturePlansSlideshow() {
     <Slideshow
       header="Things I want to do with you!"
       slides={[
-        { src: "/images/future/1.webp", title: "Italy", desc: "I want to go to Italy with you!" },
-        { src: "/images/future/2.jpg", title: "Richmond, VA", desc: "I can't wait til you come visit my apartment and make me yummy food!" },
-        { src: "/images/future/3.webp", title: "Iceland", desc: "Like come on now. We have to go to Iceland" },
-        { src: "/images/future/4.jpg", title: "Cruise", desc: "I WANT TO GO ON A CRUISE WITH YOU." },
-        { src: "/images/future/5.gif", title: "You know what.", desc: "mu heh heh heh" },
+        { src: asset("/images/future/1.webp"), title: "Italy", desc: "I want to go to Italy with you!" },
+        { src: asset("/images/future/2.jpg"), title: "Richmond, VA", desc: "I can't wait til you come visit my apartment and make me yummy food!" },
+        { src: asset("/images/future/3.webp"), title: "Iceland", desc: "Like come on now. We have to go to Iceland" },
+        { src: asset("/images/future/4.jpg"), title: "Cruise", desc: "I WANT TO GO ON A CRUISE WITH YOU." },
+        { src: asset("/images/future/5.gif"), title: "You know what.", desc: "mu heh heh heh" },
       ]}
     />
   );
@@ -109,27 +111,27 @@ export function DatesSlideshow() {
       header=""
       slides={[
         {
-          src: "/images/dates/1.JPG",
+          src: asset("/images/dates/1.JPG"),
           title: "Chicago Date",
           desc: "I loved taking you around da city. I was da TOUR GUIDE. ",
         },
         {
-          src: "/images/dates/2.JPG",
+          src: asset("/images/dates/2.JPG"),
           title: "Up North",
           desc: "So fun! We were one with nature.",
         },
         {
-          src: "/images/dates/3.JPG",
+          src: asset("/images/dates/3.JPG"),
           title: "ZooZooZoo",
           desc: "I liked watching Penguins with you!",
         },
         {
-          src: "/images/dates/4.JPG",
+          src: asset("/images/dates/4.JPG"),
           title: "First North Coast",
           desc: "Our festival together!",
         },
         {
-          src: "/images/dates/5.JPG",
+          src: asset("/images/dates/5.JPG"),
           title: "Fred Again!",
           desc: "Seeing one of my favorite artist with my favorite girl!",
         },

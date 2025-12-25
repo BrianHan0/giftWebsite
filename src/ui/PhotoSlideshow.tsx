@@ -22,7 +22,7 @@ export default function PhotoSlideshow() {
   return (
     <div className="-mx-5 -mb-4 bg-black">
       <div className="px-5 pt-4 pb-3">
-        <div className="flex items-center justify-between">
+        <div className="flex items-centerthe justify-between">
           <div className="text-xs text-white/80">
             {i + 1} / {photos.length}
           </div>
