@@ -25,7 +25,6 @@ const TITLES: Record<string, string> = {
 
 export default function HomeScreen() {
   const [active, setActive] = useState<string | null>(null);
-  const [letter, setLetter] = useState("");
 
   return (
     <div className="relative min-h-screen w-full overflow-hidden">
